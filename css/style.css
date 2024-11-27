@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Basic&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 0.5px solid #ccc;
+}
+
+.header h1 {
+    font-size: 8em;
+    font-weight: 400;
+    font-family: "Playfair", serif;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.nav-buttons :hover{
+    transform: scale(1.02);
+}
+.nav-buttons button {
+    background: none;
+    border:2px solid black;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: "Basic", sans-serif;
+    
+}
+
+.products {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.product-card {
+    text-align: center;
+
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+}
+
+.product-title {
+    font-size: 1em;
+    margin: 10px 0;
+    font-family: "Basic", sans-serif;
+}
+
+.preco {
+    font-size: 0.9em;
+    color: #666;
+    font-family: "Basic", sans-serif;
+}
+.help-cart span{
+    font-family: "Basic", sans-serif;
+    gap: 10px;
+    padding: 20px;
+}
+
+.tabela {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tabela img {
+    margin: 10px;
+    width: 312px;
+    height: 467px;
+   }
+   .tabela :hover{
+    transform: scale(1.02);
+   }
